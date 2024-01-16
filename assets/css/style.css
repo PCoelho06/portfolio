@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #e65616;
+    --primary-color-hover: #d1310a;
+    --base-100-color: #fff;
+    --base-200-color: #898989;
+    --base-300-color: #303030;
+    --base-400-color: #292929;
+    --base-500-color: #1f1f1f;
+    --base-600-color: #1a1a1a;
+    --base-700-color: #000;
+    --navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--base-100-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url('../img/home-background-mobile.jpg');
+    background-size: cover;
+    background-position-x: 30%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url('../img/home-background.jpg');
+    }
+}
+
+header {
+    background-color: transparent;
+}
+
+.header-bg {
+    background-color: rgba(0,0,0,0.8) !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.navbar-toggler {
+    border: 2px solid var(--base-100-color);
+}
+
+.navbar-toggler-icon {
+    background-image: var(--navbar-toggler-icon-bg);
+}
+
+.nav-link {
+    color: var(--base-200-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav-link.active {
+    color: var(--base-100-color) !important;
+}
+
+.nav-link:active {
+    color: var(--base-100-color) !important;
+}
+
+main {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 6rem;
+    margin-top: 100%;
+    font-weight: 800;
+    color: var(--base-700-color);
+    text-transform: uppercase;
+    letter-spacing: -0.6rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-item {
+    background-color: var(--base-400-color);
+    opacity: 0.8;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    color: var(--base-100-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+footer {
+    background-color: var(--base-700-color); 
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    max-width: 500px;
+}
+
+.footer-link {
+    color: var(--base-200-color);
+    text-decoration: none;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
