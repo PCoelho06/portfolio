@@ -78,7 +78,7 @@ main {
     margin: auto;
 }
 
-main h1 {
+.home-name {
     font-size: 6rem;
     margin-top: 100%;
     font-weight: 800;
@@ -122,4 +122,9 @@ footer ul {
     text-decoration: none;
     font-size: 0.7rem;
     text-transform: uppercase;
+}
+
+.container {
+    background-color: var(--base-600-color);
+    padding: 1rem;
 }

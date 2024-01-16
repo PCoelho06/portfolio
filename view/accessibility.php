@@ -1,8 +1,8 @@
-<?php $title = 'Accueil'; ?>
+<?php $title = 'Accessibilité'; ?>
 
 <?php ob_start(); ?>
 
-<h1 class="home-name">Pierre Coelho</h1>
+<h1>Pierre Coelho</h1>
 <div class="socials">
     <div class="social-item"><i class="fa-brands fa-x-twitter"></i></div>
     <div class="social-item"><i class="fa-brands fa-instagram"></i></div>

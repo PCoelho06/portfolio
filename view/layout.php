@@ -47,13 +47,10 @@
     <footer class="footer mt-auto">
         <ul class="d-flex justify-content-around align-items-center mx-auto">
             <li class="nav-item">
-                <a class="footer-link" href="/index.php?page=mentions-legales">Mentions légales</a>
+                <a class="footer-link" href="index.php?page=mentions-legales">Mentions légales</a>
             </li>
             <li class="nav-item">
-                <a class="footer-link" href="/index.php?page=rgpd">RGPD</a>
-            </li>
-            <li class="nav-item">
-                <a class="footer-link" href="/index.php?page=accessibilite">Accessibilité</a>
+                <a class="footer-link" href="index.php?page=accessibilite">Accessibilité</a>
             </li>
         </ul>
     </footer>
