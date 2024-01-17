@@ -1,17 +1,12 @@
-let header = document.getElementsByTagName('header')[0]
-let navbarToggler = document.querySelector('button.navbar-toggler')
-let togglerUp = document.querySelector('.navbar-toggler-up')
-let togglerMiddle = document.querySelector('.navbar-toggler-middle')
-let togglerBottom = document.querySelector('.navbar-toggler-bottom')
+let navbarToggler = document.querySelector('.menu')
+let barAbove = document.querySelector('.bar:nth-of-type(1)')
+let barMiddle = document.querySelector('.bar:nth-of-type(2)')
+let barBelow = document.querySelector('.bar:nth-of-type(3)')
 let navbarNav = document.querySelector('#navbarNav')
 
-navbarToggler.addEventListener("click", _ => {
-    Array.from(navbarToggler.children).forEach(element => {
-        element.classList.toggle('bg-light')
-    });
-    
+navbarToggler.addEventListener("click", _ => {    
     navbarNav.classList.toggle('collapse')
-    togglerUp.classList.toggle('navbar-toggler-up-animation')
-    togglerMiddle.classList.toggle('navbar-toggler-middle-animation')
-    togglerBottom.classList.toggle('navbar-toggler-bottom-animation')
+    barAbove.classList.toggle('bar-above')
+    barMiddle.classList.toggle('bar-middle')
+    barBelow.classList.toggle('bar-below')
 })

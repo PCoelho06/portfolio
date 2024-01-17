@@ -19,15 +19,18 @@
             <a class="navbar-brand" href="/">
                 <img src="assets/img/logo.svg" alt="Logo" class="d-inline-block align-text-top logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="navbar-toggler-up"></div>
-                <div class="navbar-toggler-middle"></div>
-                <div class="navbar-toggler-bottom"></div>
-            </button>
-            <div class="collapse text-center" id="navbarNav">
+            <div class="menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">projets</a>
@@ -39,11 +42,11 @@
             </div>
         </nav>
     </header>
+
     <main class="mx-auto">
-        <div class="container">
-            <?= $content ?>
-        </div>
+        <?= $content ?>
     </main>
+
     <footer class="footer mt-auto w-100">
         <ul class="d-flex justify-content-around align-items-center mx-auto">
             <li class="nav-item">
