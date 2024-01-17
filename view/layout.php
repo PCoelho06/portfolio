@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="h-100">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b3e17d2f75.js" crossorigin="anonymous"></script>
     <title><?= $title ?> - Lapinou.tech</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
@@ -23,7 +23,9 @@
                     <img src="assets/img/logo.svg" alt="Logo" class="d-inline-block align-text-top logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-toggler-up"></div>
+                    <div class="navbar-toggler-middle"></div>
+                    <div class="navbar-toggler-down"></div>
                 </button>
                 <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -41,10 +43,12 @@
             </div>
         </nav>
     </header>
-    <main class="flex-shrink-0">
-        <?= $content ?>
+    <main class="mx-auto">
+        <div class="container">
+            <?= $content ?>
+        </div>
     </main>
-    <footer class="footer mt-auto">
+    <footer class="footer mt-auto w-100">
         <ul class="d-flex justify-content-around align-items-center mx-auto">
             <li class="nav-item">
                 <a class="footer-link" href="index.php?page=mentions-legales">Mentions légales</a>

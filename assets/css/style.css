@@ -8,7 +8,6 @@
     --base-500-color: #1f1f1f;
     --base-600-color: #1a1a1a;
     --base-700-color: #000;
-    --navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 * {
@@ -16,24 +15,11 @@
     margin: 0;
     padding: 0;
     color: var(--base-100-color);
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
-}
-
-body {
-    background-image: url('../img/home-background-mobile.jpg');
-    background-size: cover;
-    background-position-x: 30%;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-@media screen and (min-width: 768px) {
-    body {
-        background-image: url('../img/home-background.jpg');
-    }
+    font-family: 'Inter', serif;
 }
 
 header {
@@ -50,11 +36,26 @@ header {
 }
 
 .navbar-toggler {
-    border: 2px solid var(--base-100-color);
+    width: 64px;
+    height: 64px;
 }
 
-.navbar-toggler-icon {
-    background-image: var(--navbar-toggler-icon-bg);
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-up, .navbar-toggler-middle, .navbar-toggler-down {
+    height: 0.4rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    background-color: var(--base-700-color);
+    margin: 0.4rem 0;
+}
+
+#navbarSupportedContent {
+    position: absolute;
+    height: 100vh;
+    top: 0;
 }
 
 .nav-link {
@@ -64,23 +65,17 @@ header {
     font-size: 1.2rem;
 }
 
-.nav-link.active {
-    color: var(--base-100-color) !important;
-}
-
-.nav-link:active {
+.nav-link.active, .nav-link:active {
     color: var(--base-100-color) !important;
 }
 
 main {
-    height: 80%;
-    width: 80%;
-    margin: auto;
+    margin-top: 75%;
+    border: 2px solid blue;
 }
 
 .home-name {
-    font-size: 6rem;
-    margin-top: 100%;
+    font-size: 5rem;
     font-weight: 800;
     color: var(--base-700-color);
     text-transform: uppercase;
@@ -91,6 +86,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.social-item-link {
+    text-decoration: none;
 }
 
 .social-item {
@@ -104,6 +103,10 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+
+.social-item:active {
+    background-color: var(--primary-color);
 }
 
 footer {
@@ -124,7 +127,7 @@ footer ul {
     text-transform: uppercase;
 }
 
-.container {
+/* .container {
     background-color: var(--base-600-color);
     padding: 1rem;
-}
+} */
