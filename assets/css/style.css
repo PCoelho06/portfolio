@@ -20,6 +20,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica Neue', serif;
 }
@@ -43,12 +49,21 @@ a:hover {
     background-color: var(--base-100-color) !important;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.display-3 {
+    font-size: 2rem;
+}
+
 /*** HEADER ***/
 
 header {
     background-color: transparent;
     width: 100%;
     padding: 0.5rem 1rem;
+    animation: fade 0.4s ease-in-out;
 }
 
 .navbar {
@@ -148,32 +163,40 @@ header {
 /*** MAIN : HOMEPAGE ***/
 
 main {
-    border: 2px solid blue;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.home-name {
-    font-size: 5rem;
-    font-weight: 800;
+main section {
+    margin: 2rem 0;
+}
+
+.hand-icon {
+    font-size: 3rem;
+}
+
+.name-display {
+    font-size: 6rem;
+    font-weight: 900;
     color: var(--base-700-color);
     text-transform: uppercase;
     letter-spacing: -0.5rem;
+    text-align: center;
 }
 
 .socials {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.social-item-link {
-    text-decoration: none;
+    width: 80%;
+    margin: auto;
 }
 
 .social-item {
     background-color: var(--base-400-color);
     opacity: 0.8;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 100%;
     color: var(--base-100-color);
     display: flex;
@@ -189,10 +212,16 @@ main {
 /*** FOOTER ***/
 
 footer {
-    background-color: var(--base-700-color); 
+    background-color: var(--base-700-color);
+    margin-top: auto;
+    height: 2rem;
 }
 
 footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
     list-style-type: none;
     padding: 0;
     height: 100%;
@@ -202,8 +231,34 @@ footer ul {
 .footer-link {
     color: var(--base-200-color);
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
 }
 
 /*** KEYFRAMES ***/
+
+@-moz-keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

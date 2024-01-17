@@ -47,10 +47,13 @@
         <?= $content ?>
     </main>
 
-    <footer class="footer mt-auto w-100">
-        <ul class="d-flex justify-content-around align-items-center mx-auto">
+    <footer>
+        <ul>
             <li class="nav-item">
                 <a class="footer-link" href="index.php?page=mentions-legales">Mentions légales</a>
+            </li>
+            <li class="nav-item">
+                <a class="footer-link" href="index.php?page=politique-confidentialite">Politique de confidentialité</a>
             </li>
             <li class="nav-item">
                 <a class="footer-link" href="index.php?page=accessibilite">Accessibilité</a>
