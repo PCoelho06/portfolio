@@ -1,3 +1,5 @@
+/*** INITIALIZE ***/
+
 :root {
     --primary-color: #e65616;
     --primary-color-hover: #d1310a;
@@ -18,13 +20,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*** GLOBAL CLASSES ***/
+
 .text-center {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', serif;
-}
+/*** HEADER ***/
 
 header {
     background-color: transparent;
@@ -64,13 +74,11 @@ header {
 }
 
 .navbar-toggler-up-animation {
-    /* transform: rotate(45deg) translate(10px) scale(0.8); */
     transform: rotate(45deg) scale(0.8) translate(25%);
     transform-origin: center;
 }
  
 .navbar-toggler-bottom-animation {
-    /* transform: rotate(-45deg) translateX(0.5rem) scale(0.8); */
     transform: rotate(-45deg) scale(0.8) translate(25%);
     transform-origin: center;
 }
@@ -96,9 +104,14 @@ header {
     background-color: #000;
     z-index:1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav {
+    border: 2px solid red;
+    list-style-type: none;
 }
 
 .nav-link {
