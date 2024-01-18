@@ -6,8 +6,8 @@
     <span class="breadcrumb active"><a href="index.php?page=<?= $_GET['page'] ?>"><?= $page ?></a></span>
 </div>
 
-<h1 class="page-title" data-title="Projets">
-    Projets
+<h1 class="page-title" data-title="<?= $page ?>">
+    <?= $page ?>
 </h1>
 
 <!-- Projets -->

@@ -9,6 +9,9 @@
         <section class="name">
             <h1 class="name-display">Pierre Coelho</h1>
         </section>
+        <section class="function">
+            <h2 class="function-display">Developpeur web full-stack</h2>
+        </section>
         <section class="socials">
             <a class="social-link" href="https://github.com/PCoelho06">
                 <div class="social-item"><i class="fa-brands fa-github"></i></div>

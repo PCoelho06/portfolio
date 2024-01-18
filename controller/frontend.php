@@ -1,6 +1,6 @@
 <?php
 
-function showHome()
+function showHome($page)
 {
     require('view/home.php');
 }
@@ -8,6 +8,11 @@ function showHome()
 function showProjects($page)
 {
     require('view/projects.php');
+}
+
+function showAbout($page)
+{
+    require('view/about.php');
 }
 
 function showLegalMentions($page)

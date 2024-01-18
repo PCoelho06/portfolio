@@ -218,6 +218,11 @@ main section {
     }
 }
 
+.function-display {
+    text-align: center;
+    font-family: 'Leckerli One';
+}
+
 .socials {
     display: flex;
     justify-content: space-between;
@@ -276,6 +281,7 @@ main section {
     transform: translateX(-50%) translateY(-50%);
     font-size: 10rem;
     z-index: -1;
+    text-wrap: nowrap;
     text-shadow:
         3px 3px 0 var(--base-200-color),
         -3px 3px 0 var(--base-200-color),
