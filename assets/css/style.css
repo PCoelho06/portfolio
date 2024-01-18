@@ -57,6 +57,10 @@ a:hover {
     font-size: 2rem;
 }
 
+.invisible {
+    display: none;
+}
+
 /*** HEADER ***/
 
 header {
@@ -169,12 +173,25 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
+        margin: auto;
         margin-top: max(auto,2rem);
         margin-bottom: 2rem;
+        width: 80%;
     }
 
     .socials {
         max-width: 24rem;
+    }
+
+    .presentation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .presentation-left, .presentation-right {
+        width: fit-content;
+        border: 2px solid red;
     }
 }
 
@@ -187,12 +204,18 @@ main section {
 }
 
 .name-display {
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 900;
     color: var(--base-700-color);
     text-transform: uppercase;
     letter-spacing: -0.5rem;
     text-align: center;
+}
+
+@media screen and (min-width: 400px) {
+    .name-display {
+        font-size: 6rem;
+    }
 }
 
 .socials {
@@ -221,6 +244,94 @@ main section {
 
 .fa-brands {
     color: var(--base-100-color);
+}
+
+/*** MAIN : PROJECTS ***/
+
+.breadcrumbs {
+    text-align: center;
+}
+
+.breadcrumb.active {
+    font-weight: 800;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    padding: 4rem 0;
+    position: relative;
+    letter-spacing: -0.2rem;
+    overflow: hidden;
+}
+
+.page-title::after {
+    content: attr(data-title);
+    letter-spacing: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--base-100-color);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 10rem;
+    z-index: -1;
+    text-shadow:
+        3px 3px 0 var(--base-200-color),
+        -3px 3px 0 var(--base-200-color),
+        -3px -3px 0 var(--base-200-color),
+        3px -3px 0 var(--base-200-color);
+}
+
+.card {
+    width: 80%;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--base-700-color);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title, .description {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.description {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.back-card {
+    position: absolute;
+    background-color: var(--base-100-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.techs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.tech {
+    padding: 5px;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    color: var(--base-100-color);
+    background-color: var(--primary-color);
+    margin: 0.2rem 0.4rem;
 }
 
 /*** FOOTER ***/

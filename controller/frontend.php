@@ -5,12 +5,17 @@ function showHome()
     require('view/home.php');
 }
 
-function showLegalMentions()
+function showProjects($page)
+{
+    require('view/projects.php');
+}
+
+function showLegalMentions($page)
 {
     require('view/legal_mentions.php');
 }
 
-function showAccessibility()
+function showAccessibility($page)
 {
     require('view/home.php');
 }
