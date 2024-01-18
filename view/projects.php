@@ -19,11 +19,29 @@
         </div>
         <div class="back-card invisible">
             <div class="project-infos">
-                <h2 class="card-title">Potigato.fr</h2>
+                <h2 class="card-title"><a href="https://potigato.fr" target="_blank">Potigato.fr</a></h2>
                 <p class="description">E-commerce</p>
             </div>
             <div class="techs">
                 <span class="tech">Wordpress</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="front-card">
+            <img src="assets/img/rotary.png" class="card-img" alt="Image de la page d'accueil du site web rotary-portovecchio.fr">
+        </div>
+        <div class="back-card invisible">
+            <div class="project-infos">
+                <h2 class="card-title"><a href="https://rotary-portovecchio.org" target="_blank">Rotary - Portovecchio</a></h2>
+                <p class="description">Site association caritative</p>
+            </div>
+            <div class="techs">
+                <span class="tech">HTML5</span>
+                <span class="tech">CSS3</span>
+                <span class="tech">Twig</span>
+                <span class="tech">Symfony (PHP)</span>
             </div>
         </div>
     </div>

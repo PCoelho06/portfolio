@@ -283,6 +283,12 @@ main section {
         3px -3px 0 var(--base-200-color);
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .card {
     width: 80%;
     margin: auto;
@@ -322,16 +328,28 @@ main section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 
 .tech {
-    padding: 5px;
+    padding: 5px 1rem;
     border-radius: 1rem;
     font-size: 0.7rem;
     color: var(--base-100-color);
     background-color: var(--primary-color);
     margin: 0.2rem 0.4rem;
+}
+
+@media screen and (min-width:768px) {
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        height: 100%;
+    }
 }
 
 /*** FOOTER ***/
