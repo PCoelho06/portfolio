@@ -10,16 +10,16 @@
     <h1 class="name-display">Pierre Coelho</h1>
 </section>
 <section class="socials">
-    <a class="social-item-link" href="">
-        <div class="social-item"><i class="fa-brands fa-x-twitter"></i></div>
-    </a>
-    <a class="social-item-link" href="">
-        <div class="social-item"><i class="fa-brands fa-instagram"></i></div>
-    </a>
-    <a class="social-item-link" href="">
+    <a class="social-link" href="https://github.com/PCoelho06">
         <div class="social-item"><i class="fa-brands fa-github"></i></div>
     </a>
-    <a class="social-item-link" href="">
+    <a class="social-link" href="">
+        <div class="social-item"><i class="fa-brands fa-x-twitter"></i></div>
+    </a>
+    <a class="social-link" href="">
+        <div class="social-item"><i class="fa-brands fa-instagram"></i></div>
+    </a>
+    <a class="social-link" href="">
         <div class="social-item"><i class="fa-brands fa-linkedin"></i></div>
     </a>
 </section>

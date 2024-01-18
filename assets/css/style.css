@@ -27,7 +27,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Helvetica Neue', serif;
+    font-family: 'Helvetica Neue', 'Inter', serif;
 }
 
 a {
@@ -167,6 +167,17 @@ main {
     margin-bottom: auto;
 }
 
+@media screen and (min-width: 768px) {
+    main {
+        margin-top: max(auto,2rem);
+        margin-bottom: 2rem;
+    }
+
+    .socials {
+        max-width: 24rem;
+    }
+}
+
 main section {
     margin: 2rem 0;
 }
@@ -193,12 +204,11 @@ main section {
 }
 
 .social-item {
-    background-color: var(--base-400-color);
+    background-color: var(--base-500-color);
     opacity: 0.8;
     width: 4rem;
     height: 4rem;
     border-radius: 100%;
-    color: var(--base-100-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,6 +217,10 @@ main section {
 
 .social-item:active {
     background-color: var(--primary-color);
+}
+
+.fa-brands {
+    color: var(--base-100-color);
 }
 
 /*** FOOTER ***/
