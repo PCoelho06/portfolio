@@ -12,6 +12,7 @@
     <title><?= $page ?> - Lapinou.tech</title>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/projects.js" defer></script>
+    <script src="assets/js/homepage.js" defer></script>
 </head>
 
 <body class="d-flex flex-column">

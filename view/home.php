@@ -28,7 +28,7 @@
         </section>
     </div>
     <div class="presentation-right">
-        <!-- TODO image homepage -->
+        <img src="assets/img/homepage-illustration.png" alt="Illustration de la page d'accueil" id="homepage-illustration">
     </div>
 </div>
 

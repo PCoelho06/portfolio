@@ -171,6 +171,14 @@ main {
     margin-bottom: auto;
 }
 
+.presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (min-width: 768px) {
     main {
         margin: auto;
@@ -184,14 +192,13 @@ main {
     }
 
     .presentation {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
     }
 
     .presentation-left, .presentation-right {
         width: fit-content;
-        border: 2px solid red;
     }
 }
 
