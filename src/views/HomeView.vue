@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <div class="grid grid-cols-3 grid-rows-2 gap-4">
+  <div class="h-full grid grid-cols-3 grid-rows-2 gap-4">
     <ThePresentation />
     <RouterLink
       to="/about"
