@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #d9d9d9;
+  --color-secondary: #1e1e1e;
+  --color-tertiary: #f87204;
+  --color-quaternary: #009dff;
+  --color-fifth: #5b5b5b;
+  --color-text-dark: #000000;
+  --color-text-light: #ffffff;
+
+  --font-text: 'Inter', sans-serif;
+}
