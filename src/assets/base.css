@@ -20,6 +20,18 @@
   background-color: var(--color-quaternary);
 }
 
+.bg-important {
+  background-color: var(--color-tertiary);
+}
+
+.bg-work {
+  background: url('images/bg-work.jpg') no-repeat center center/cover;
+}
+
+.bg-blog {
+  background: url('images/bg-blog.png') no-repeat center center/cover;
+}
+
 .text-light {
   color: var(--color-text-light);
 }

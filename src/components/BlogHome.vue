@@ -3,10 +3,8 @@ import ArrowIcon from '../components/icons/ArrowIcon.vue'
 </script>
 
 <template>
-  <div class="rounded-lg bg-darker p-4 flex flex-col justify-start">
-    <div class="mt-auto flex justify-end items-end">
-      <h2 class="text-light">Blog</h2>
-      <ArrowIcon />
-    </div>
+  <div class="mt-auto flex justify-end items-end mb-4">
+    <h2 class="text-light">Blog</h2>
+    <ArrowIcon />
   </div>
 </template>

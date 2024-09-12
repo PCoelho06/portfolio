@@ -11,7 +11,7 @@ import BlogHome from '../components/BlogHome.vue'
     <ThePresentation />
     <RouterLink
       to="/about"
-      class="rounded-lg bg-light p-4 row-span-2 flex flex-col justify-between"
+      class="rounded-lg bg-light p-0 row-span-2 flex flex-col justify-between"
     >
       <AboutHome />
     </RouterLink>

@@ -1,14 +1,12 @@
 @import './base.css';
 @import './variables.css';
+@import './keyframes.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  height: 100vh;
-  margin: 0;
-  padding: 1rem;
   color: var(--color-text-dark);
 }
 
@@ -20,10 +18,18 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
 }
 
 .text-important {
   color: var(--color-tertiary);
+}
+
+.translate-up {
+  animation: translateUp 15s linear infinite;
+}
+
+.translate-down {
+  animation: translateDown 15s linear infinite;
 }
