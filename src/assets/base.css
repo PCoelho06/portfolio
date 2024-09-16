@@ -35,3 +35,11 @@
 .text-light {
   color: var(--color-text-light);
 }
+
+.dot {
+  height: 0.7rem;
+  width: 0.7rem;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  display: inline-block;
+}

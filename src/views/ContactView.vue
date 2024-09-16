@@ -5,9 +5,11 @@ import InfoContact from '../components/InfoContact.vue'
 </script>
 
 <template>
-  <div class="grid grid-cols-3 grid-rows-2 gap-4">
+  <div class="h-full grid grid-cols-3 grid-rows-2 gap-4">
     <ThePresentation />
-    <ContactForm />
+    <div class="rounded-lg bg-light col-span-2 row-span-2 flex flex-col justify-between">
+      <ContactForm />
+    </div>
     <InfoContact />
   </div>
 </template>

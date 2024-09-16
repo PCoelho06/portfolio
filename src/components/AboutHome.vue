@@ -23,7 +23,7 @@ import VscIcon from './icons/VscIcon.vue'
 import DockerIcon from './icons/DockerIcon.vue'
 import FigmaIcon from './icons/FigmaIcon.vue'
 
-const iconsWidth = 80
+const iconsWidth = '80'
 </script>
 
 <template>

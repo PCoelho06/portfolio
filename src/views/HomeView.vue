@@ -19,8 +19,8 @@ import { RouterLink } from 'vue-router'
     <RouterLink to="/contact" class="rounded-lg bg-darker p-4 flex flex-col justify-between">
       <ContactHome />
     </RouterLink>
-    <RouterLink to="/blog" class="rounded-lg bg-blog flex flex-col justify-start">
+    <a href="http://blog.lapinou.tech" class="rounded-lg bg-blog flex flex-col justify-start">
       <BlogHome />
-    </RouterLink>
+    </a>
   </div>
 </template>
